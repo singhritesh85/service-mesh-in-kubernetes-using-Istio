@@ -4,7 +4,7 @@ When considering microservice without service mesh, every service can communicat
 
 <br><br/>
 ![image](https://github.com/user-attachments/assets/b72e80cd-5322-4700-a8f6-51e771cb7723)
-Istiod imparts service discovery, configuration and certificate management. Communication configuration (which microservices are allowed to communicate and which services are not allowed to communicate), metrics, security and tracing will be taken care by sidecar proxy container. After implementation of service mesh using istio no services will be allowed to communicate directly it will be communicated through the **sidecar proxy envoy container**.
+Istiod imparts service discovery, configuration and certificate management. Communication configuration (which microservices are allowed to communicate and which services are not allowed to communicate), metrics, security and tracing will be taken care by sidecar proxy container. After implementation of service mesh using istio no services will be allowed to communicate directly it will be communicated through the **sidecar proxy envoy container** as shown in the diagram above.
 
 <br><br/>
 **Architecture diagram for Service mesh using istio is as shown below.**
