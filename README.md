@@ -96,3 +96,17 @@ kubectl argo rollouts get rollout productpage-v1 -n microservice --watch
 You can also perform installation of jaeger, kiali, prometheus and grafana with istio as shown in below screenshots.
 ![image](https://github.com/user-attachments/assets/2e49d7a4-9d60-458c-bf60-1a50396072f4)
 ![image](https://github.com/user-attachments/assets/1843806d-7937-423a-a75f-0dccfb6a67ea)
+
+Directory istio-1.22.3 will be created automatically after installation of Istio.
+
+Now create gateway, virtualservice and destination rule for grafana and kiali as shown in the screenshot below.
+![image](https://github.com/user-attachments/assets/2390a3e9-d1d1-4325-8803-9884352e1058)
+![image](https://github.com/user-attachments/assets/5269bc5d-18c1-4772-b445-b0a989197eb5)
+![image](https://github.com/user-attachments/assets/dcb6682b-687e-4169-b8e3-6efdbb7171f2)
+
+I have added Destination Rule here as mTLS was enabled and kiali and grafana doesn't have a sidecar container so it is necessary to add destination rule with mTLS disabled as shown in the above screenshot.
+<br><br/>
+Finally create the record set in Route53 with DNS Name of the istio-ingressgateway service and access the created URL.
+![image](https://github.com/user-attachments/assets/3ba2f156-9b69-4ea1-82c2-d1fa45ce284b)
+![image](https://github.com/user-attachments/assets/276a4a71-67b5-4e52-993c-ef955b1524ae)
+![image](https://github.com/user-attachments/assets/3ef05797-588f-4a87-98c9-3e7dd7c3bf31)
