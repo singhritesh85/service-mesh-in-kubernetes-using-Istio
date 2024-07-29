@@ -35,7 +35,7 @@ kubectl label namespace microservice istio-injection=enabled
 Now check the labels using the command as shown below
 kubectl get ns --show-labels
 ```
-Finally you will see two out of two containers are ready as shown in the screenshot below. The second container is for sedecar proxy envoy container. 
+Finally you will see two out of two containers are ready as shown in the screenshot below. The second container is for sidecar proxy envoy container. 
 ![image](https://github.com/user-attachments/assets/ea7ac4cf-2530-4ce5-a17a-2de1047dc540)
 
 You can observe that in namespace istio-system there is a service named as istio-ingressgateway as shown in the screenshot below. Istio ingress gateway provides the similar functionality as that of ingress-controller. In ingress controller you need to create ingress rule however here you need to create gateway as well as virtual service.
