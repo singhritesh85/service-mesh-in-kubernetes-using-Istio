@@ -60,3 +60,4 @@ Now do the entry in Rout53 to create record set for DNS Name of isto-ingressgate
 
 ### Istio supports traffic spliting and hence canary deployment.
 To demonstrate canary deployment using Istio I have installed Argo Rollout and deleted earlier deployment, gateway and virtualservice using the command kubectl delete -f kubernetes-original-manifests.yaml and kubectl delete -f gateway-original.yaml.
+![image](https://github.com/user-attachments/assets/45c5d68c-e22b-40d8-b440-8fe010ffbd81)
