@@ -20,7 +20,7 @@ Explanation of different components for istio in brief.
 
 For the demonstration purpose I have used the microservice as provided on the Isio site https://istio.io/latest/docs/setup/getting-started/ in the URL https://raw.githubusercontent.com/istio/istio/release-1.22/samples/bookinfo/platform/kube/bookinfo.yaml. Details regarding the microservice is available on https://istio.io/latest/docs/examples/bookinfo/.
 
-I had deployed the microservice on the eks-cluster and eks cluster was created using the terraform script as available with this Repository. Istio is not yet installed on the eks cluster. 
+I had deployed the microservice on the eks-cluster and eks cluster was created using the terraform script as available with the Repository https://github.com/singhritesh85/terraform-eks-withaddons.git. Istio is not yet installed on the eks cluster. 
 
 As shown in the screenshot below at present only one out of one container is ready. It means sidecar proxy envoy container is not yet created in the pod. As I mentioned I had not installed Istio till now.
 ![image](https://github.com/user-attachments/assets/1eff6214-a2f6-4356-b0cd-de29c1045267)
