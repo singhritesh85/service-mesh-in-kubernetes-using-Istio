@@ -60,7 +60,10 @@ Now do the entry in Rout53 to create record set for DNS Name of isto-ingressgate
 
 ### Istio supports traffic spliting and hence canary deployment.
 To demonstrate canary deployment using Istio I have installed Argo Rollout and deleted earlier deployment, gateway and virtualservice using the command kubectl delete -f kubernetes-original-manifests.yaml and kubectl delete -f gateway-original.yaml.
-![image](https://github.com/user-attachments/assets/45c5d68c-e22b-40d8-b440-8fe010ffbd81)
+![image](https://github.com/user-attachments/assets/8ba8ac31-f98b-4ee8-8d1c-87b8cabaa372)
+![image](https://github.com/user-attachments/assets/8f049320-8664-4bff-9c0a-376238be9854)
+![image](https://github.com/user-attachments/assets/a5b7e030-9e49-4444-aabe-5b41d934ca5c)
+![image](https://github.com/user-attachments/assets/b9fc9175-6a92-405a-a28a-6a7fdd4cb7b8)
 ![image](https://github.com/user-attachments/assets/faefdb4a-9feb-4d16-a4c1-300586b2e1ea)
 
 In **canary deployment** a newer version of Application pods will be created, the older version of application is named as stable version and newer version is named as canary version. A certain percentage (weight) of traffic will be routed to the canary version and rest of the traffic will be routed to the stable version and perform the testing with newer version of Application pods. If every thing is fine with newer version of application then perform rollout and move to newer version of applications.
