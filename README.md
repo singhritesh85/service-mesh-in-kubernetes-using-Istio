@@ -66,7 +66,7 @@ To demonstrate canary deployment using Istio I have installed Argo Rollout and d
 In **canary deployment** a newer version of Application pods will be created, the older version of application is named as stable version and newer version is named as canary version. A certain percentage (weight) of traffic will be routed to the canary version and rest of the traffic will be routed to the stable version and perform the testing with newer version of Application pods. If every thing is fine with newer version of application then perform rollout and move to newer version of applications.
 
 In the Original manifests file as present in the link https://raw.githubusercontent.com/istio/istio/release-1.22/samples/bookinfo/platform/kube/bookinfo.yaml. I did change in productpage-v1 deployment as shown in the screenshot below and updated manifests file is available with this Repository.
-![image](https://github.com/user-attachments/assets/4d4bf9d0-d9b9-4a38-9f23-377820c1b086)
+![image](https://github.com/user-attachments/assets/cfe42bbf-bc9d-4467-84fc-112aa6d746ad)
 ![image](https://github.com/user-attachments/assets/1a940db8-88a1-4bd6-9920-880804ff4018)
 ![image](https://github.com/user-attachments/assets/9d85669d-ddfd-4c82-8bcd-ab3a7e5d5249)
 ![image](https://github.com/user-attachments/assets/e9281714-fc55-4981-b9ab-87cc5e56ad0d)
