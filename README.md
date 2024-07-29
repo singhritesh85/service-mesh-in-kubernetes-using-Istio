@@ -89,3 +89,7 @@ kubectl argo rollouts get rollout productpage-v1 -n microservice --watch
 ![image](https://github.com/user-attachments/assets/9d9468a6-81cc-4fcd-98de-62d912d828c8)
 
 ![image](https://github.com/user-attachments/assets/ff6d05c4-a6d4-4875-b3e8-8479ca334410)
+
+You can also perform installation of jaeger, kiali, prometheus and grafana with istio as shown in below screenshots.
+![image](https://github.com/user-attachments/assets/2e49d7a4-9d60-458c-bf60-1a50396072f4)
+![image](https://github.com/user-attachments/assets/1843806d-7937-423a-a75f-0dccfb6a67ea)
