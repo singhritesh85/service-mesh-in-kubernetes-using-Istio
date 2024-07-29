@@ -73,3 +73,18 @@ In the Original manifests file as present in the link https://raw.githubusercont
 ![image](https://github.com/user-attachments/assets/1a940db8-88a1-4bd6-9920-880804ff4018)
 ![image](https://github.com/user-attachments/assets/4b085d1c-5f4b-4337-96b9-383fc19c37c3)
 ![image](https://github.com/user-attachments/assets/e9281714-fc55-4981-b9ab-87cc5e56ad0d)
+
+Now change the image version of application productpage from 1.19.1 to 1.20.1
+![image](https://github.com/user-attachments/assets/21a20a8a-0954-489d-a1df-4e033e9a4d7d)
+And check if the newer version of application is working properly. If it is working properly then perform rollout.
+```
+Below commands can be used to perform rollout and check the status after rollout
+
+kubectl argo rollouts promote productpage-v1 -n microservice
+
+kubectl argo rollouts get rollout productpage-v1 -n microservice --watch
+```
+![image](https://github.com/user-attachments/assets/8f76281f-7777-4d43-a743-5dc94a57bba1)
+![image](https://github.com/user-attachments/assets/9d9468a6-81cc-4fcd-98de-62d912d828c8)
+
+![image](https://github.com/user-attachments/assets/ff6d05c4-a6d4-4875-b3e8-8479ca334410)
