@@ -54,6 +54,9 @@ Screenshot for yaml file to create gateway and virtual service is as shown below
 ![image](https://github.com/user-attachments/assets/18798d7d-ed47-4cd9-8361-60dcc8e27c1e)
 ![image](https://github.com/user-attachments/assets/fcf9c729-89b9-423f-aabf-bf94e80f3716)
 
+In above screenshot of gateway you can see the selector which I have used is **istio: ingressgateway** matched with the istio-ingressgateway deployment as shown in the screenshot below. 
+![image](https://github.com/user-attachments/assets/19166834-ce25-45d1-a5d5-1443bcb89e63)
+
 Now do the entry in Rout53 to create record set for DNS Name of isto-ingressgateway service and create the URL and access your application through that URL.
 ![image](https://github.com/user-attachments/assets/65f8ed5c-ae04-4f4a-a49c-857a5a178567)
 ![image](https://github.com/user-attachments/assets/b1cc9de9-3ba5-4c0d-ab5a-c199d7d51cee)
